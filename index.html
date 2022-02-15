@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Сапер</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body oncontextmenu="return false">
+	<script src="main.js"></script>
+
+	<form class="menu">
+		<div class="menu-wrapper">
+			<label class="menu__cells-lbl">
+				<span class="menu__cells-txt">По горизонтали:</span>
+				<input class="menu__cells" type="text" name="cellsQuantity" value="50" onfocus="this.select()">
+			</label>
+			<label class="menu__rows-label-lbl">
+				<span class="menu__rows-txt">По вертикали:</span>
+				<input class="menu__rows" type="text" value="15" name="rowsQuantity" onfocus="this.select()">
+			</label>
+		</div>
+		<label class="menu__difficulty-lbl" for="null">
+			<span class="menu__difficulty-txt">Сложность:</span>
+
+			<input class="menu__difficulty-radio" name="diffilulty" id="easy" type="radio" value="1">
+			<label class="menu__difficulty-label" for="easy">Легко</label>
+
+			<input class="menu__difficulty-radio" name="diffilulty" id="medium" type="radio" value="2" checked>
+			<label class="menu__difficulty-label" for="medium">Средне</label>
+
+			<input class="menu__difficulty-radio" name="diffilulty" id="hard" type="radio" value="3">
+			<label class="menu__difficulty-label" for="hard">Сложно</label>
+		</label>
+		<!-- <input class="menu__new-game-btn" type="button" value="Новая игра!"> -->
+		<button class="menu__new-game-btn">Новая игра!</button>
+	</form>
+
+	<div class="game-state">
+		<div class="game-state__wrapper">
+			<div class="game-state__mines">
+				<div class="game-state__mines-img"></div>
+				<span class="game-state__mines-txt">: 0</span>
+			</div>
+			<div class="game-state__timer">
+				<div class="game-state__timer-img"></div>
+				<span class="game-state__timer-txt">: 0</span>
+			</div>
+			<div class="game-state__flags">
+				<div class="game-state__flags-img"></div>
+				<span class="game-state__flags-txt">: 0</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="frame" style="display: none;">
+		<div class="frame__game-over">
+			<span class="frame__game-over_txt">Игра окончена</span>
+		</div>
+		<div class="second-frame">
+			<div class="wrapper">
+
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
