@@ -26,9 +26,10 @@ class Game {
 	}
 
 	init() {
+		//test V
 		document.querySelector('.menu').addEventListener('submit', (mainFormEvent) => {
-			mainFormEvent.preventDefault();
-			const formData = new FormData(document.querySelector('.menu'));
+		mainFormEvent.preventDefault();
+		const formData = new FormData(document.querySelector('.menu'));
 			const entriesArray = [];
 
 			for (let [, value] of formData.entries()) {
